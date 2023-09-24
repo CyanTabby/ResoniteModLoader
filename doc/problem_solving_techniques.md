@@ -1,6 +1,6 @@
 # Problem Solving Techniques
 
-Neos has many different ways to solve a problem: Components, Logix, HTTP connections to an external server, refhacking, plugins, and now mods. Some of these methods are supported, some aren't. We'll do a quick rundown of the methods and where they're applicable.
+Resonite has many different ways to solve a problem: Components, Logix, HTTP connections to an external server, refhacking, plugins, and now mods. Some of these methods are supported, some aren't. We'll do a quick rundown of the methods and where they're applicable.
 
 ## Components and Logix
 
@@ -8,7 +8,7 @@ If you can solve a problem with Components and/or Logix that's probably the appr
 
 ## HTTP Connections
 
-Neos provides Logix nodes to communicate with an external server via HTTP GET, POST, and websockets. This is great for:
+Resonite provides Logix nodes to communicate with an external server via HTTP GET, POST, and websockets. This is great for:
 
 - Heavy data processing that LogiX isn't well suited for
 - Advanced data persistence (for simple things consider using Cloud Variables)

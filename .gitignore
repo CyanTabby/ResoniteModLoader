@@ -317,7 +317,7 @@ paket-files/
 __pycache__/
 *.pyc
 
-NeosHeadless/*
+ResoniteHeadless/*
 
 # Cake - Uncomment if you are using it
 # tools/**

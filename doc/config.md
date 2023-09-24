@@ -1,6 +1,6 @@
-# NeosModLoader Configuration System
+# ResoniteModLoader Configuration System
 
-NeosModLoader provides a built-in configuration system that can be used to persist configuration values for mods. **This configuration system only exists in NeosModLoader releases 1.8.0 and later!**
+ResoniteModLoader provides a built-in configuration system that can be used to persist configuration values for mods. **This configuration system only exists in ResoniteModLoader releases 1.8.0 and later!**
 
 Operations provided:
 
@@ -10,7 +10,7 @@ Operations provided:
 - Enumerating mods
 - Saving a config to disk
 
-Behind the scenes, configs are saved to a `nml_config` folder in the Neos install directory. The `nml_config` folder contains JSON files, named after each mod dll that defines a config. End users and mod developers do not need to interact with this JSON directly. Mod developers should use the API exposed by NeosModLoader. End users should use interfaces exposed by configuration management mods.
+Behind the scenes, configs are saved to a `nml_config` folder in the Resonite install directory. The `nml_config` folder contains JSON files, named after each mod dll that defines a config. End users and mod developers do not need to interact with this JSON directly. Mod developers should use the API exposed by ResoniteModLoader. End users should use interfaces exposed by configuration management mods.
 
 ## Overview
 
@@ -27,12 +27,12 @@ Behind the scenes, configs are saved to a `nml_config` folder in the Neos instal
 A simple example is below:
 
 ```csharp
-public class NeosModConfigurationExample : NeosMod
+public class ResoniteModConfigurationExample : ResoniteMod
 {
-    public override string Name => "NeosModConfigurationExample";
+    public override string Name => "ResoniteModConfigurationExample";
     public override string Author => "runtime";
     public override string Version => "1.0.0";
-    public override string Link => "https://github.com/neos-modding-group/NeosModConfigurationExample";
+    public override string Link => "https://github.com/Resonite-modding-group/ResoniteModConfigurationExample";
 
     [AutoRegisterConfigKey]
     private readonly ModConfigurationKey<int> KEY_COUNT = new ModConfigurationKey<int>("count", "Example counter", internalAccessOnly: true);
@@ -56,7 +56,7 @@ public class NeosModConfigurationExample : NeosMod
 }
 ```
 
-A full example repository that uses a few additional APIs is provided [here](https://github.com/neos-modding-group/NeosModConfigurationExample).
+A full example repository that uses a few additional APIs is provided [here](https://github.com/Resonite-modding-group/ResoniteModConfigurationExample).
 
 ### Defining a Configuration
 
@@ -70,7 +70,7 @@ public override void DefineConfiguration(ModConfigurationDefinitionBuilder build
 {
     builder
         .Version(new Version(1, 0, 0)) // manually set config version (default is 1.0.0)
-        .AutoSave(false); // don't autosave on Neos shutdown (default is true)
+        .AutoSave(false); // don't autosave on Resonite shutdown (default is true)
 }
 ```
 
@@ -78,7 +78,7 @@ This `ModConfigurationDefinitionBuilder` allows you to change the default versio
 
 #### Configuration Version
 
-You may optionally specify a version for your configuration. This is separate from your mod's version. By default, the version will be 1.0.0. The version should be a [semantic version][semver]—in summary the major version should be bumped for hard breaking changes, and the minor version should be bumped if you break backwards compatibility. NeosModLoader uses this version number to check the saved configuration against your definition and ensure they are compatible.
+You may optionally specify a version for your configuration. This is separate from your mod's version. By default, the version will be 1.0.0. The version should be a [semantic version][semver]—in summary the major version should be bumped for hard breaking changes, and the minor version should be bumped if you break backwards compatibility. ResoniteModLoader uses this version number to check the saved configuration against your definition and ensure they are compatible.
 
 #### Configuration Keys
 
@@ -93,22 +93,22 @@ public ModConfigurationKey(string name, string description, Func<T> computeDefau
 | name | Unique name of this config item | *required* |
 | description | Human-readable description of this config item | *required* |
 | computeDefault | Function that, if present, computes a default value for this key | `null` |
-| internalAccessOnly | If true, only the owning mod should have access to this config item. Note that this is *not* enforced by NeosModLoader itself. | `false` |
+| internalAccessOnly | If true, only the owning mod should have access to this config item. Note that this is *not* enforced by ResoniteModLoader itself. | `false` |
 | valueValidator | A custom function that (if present) checks if a value is valid for this configuration item | `null` |
 
 ### Saving the Configuration
 
 Configurations should be saved to disk by calling the `ModConfiguration.Save()` method. If you don't call `ModConfiguration.Save()`, your changes will still be available in memory. This allows multiple changes to be batched before you write them all to disk at once. Saving to disk is a relatively expensive operation and should not be performed at high frequency.
 
-NeosModLoader will automatically call `Save()` for you when Neos is shutting down. This will not occur if Neos crashes, so to avoid data loss you should manually call `Save()` when appropriate. If you'd like to opt out of this autosave-on-shutdown functionality, use the `ModConfigurationDefinitionBuilder` discussed in the [Defining a Configuration](#defining-a-configuration) section.
+ResoniteModLoader will automatically call `Save()` for you when Resonite is shutting down. This will not occur if Resonite crashes, so to avoid data loss you should manually call `Save()` when appropriate. If you'd like to opt out of this autosave-on-shutdown functionality, use the `ModConfigurationDefinitionBuilder` discussed in the [Defining a Configuration](#defining-a-configuration) section.
 
 ### Getting the Configuration
 
-To get the configuration, call `NeosModBase.GetConfiguration()`. Some notes:
+To get the configuration, call `ResoniteModBase.GetConfiguration()`. Some notes:
 
 - This will return `null` if the mod does not have a configuration.
-- You must not call `NeosModBase.GetConfiguration()` before OnEngineInit() is called, as the mod may still be initializing.
-- The returned `ModConfiguration` instance is guaranteed to be the same reference for all calls to `NeosModBase.GetConfiguration()`. Therefore, it is safe to save a reference to your `ModConfiguration`.
+- You must not call `ResoniteModBase.GetConfiguration()` before OnEngineInit() is called, as the mod may still be initializing.
+- The returned `ModConfiguration` instance is guaranteed to be the same reference for all calls to `ResoniteModBase.GetConfiguration()`. Therefore, it is safe to save a reference to your `ModConfiguration`.
 - Other mods may modify the `ModConfiguration` instance you are working with.
 - A `ModConfiguration.TryGetValue()` call will always return the current value for that config item. If you need notice that someone else has changed one of your configs, there are events you can subscribe to. However, the `ModConfiguration.GetValue()` and `TryGetValue()` API is very inexpensive so it is fine to poll.
 
@@ -133,7 +133,7 @@ A `ConfigurationChangedEvent` has the following properties:
 
 ### Handling Incompatible Configuration Versions
 
-You may optionally override a `HandleIncompatibleConfigurationVersions()` function in your NeosMod to define how incompatible versions are handled. You have two options:
+You may optionally override a `HandleIncompatibleConfigurationVersions()` function in your ResoniteMod to define how incompatible versions are handled. You have two options:
 
 - `IncompatibleConfigurationHandlingOption.ERROR`: Fail to read the config, and block saving over the config on disk.
 - `IncompatibleConfigurationHandlingOption.CLOBBER`: Destroy the saved config and start over from scratch.
@@ -179,7 +179,7 @@ There are two cases to consider:
 | Changing `internalAccessOnly` to `true` | Yes** |Yes |
 | Altering a key's type (removing and re-adding later counts!) | **No** | **No** |
 
-<sup>\* NeosModLoader is compatible, but the old version of your mod's code may not be</sup>  
+<sup>\* ResoniteModLoader is compatible, but the old version of your mod's code may not be</sup>  
 <sup>\*\* Assuming the new version of your mod properly accounts for reading old configs</sup>
 
 ## Working With Other Mods' Configurations
@@ -189,8 +189,8 @@ An example of enumerating all configs:
 ```csharp
 void EnumerateConfigs()
 {
-    IEnumerable<NeosModBase> mods = ModLoader.Mods();
-    foreach (NeosModBase mod in mods)
+    IEnumerable<ResoniteModBase> mods = ModLoader.Mods();
+    foreach (ResoniteModBase mod in mods)
     {
         ModConfiguration config = mod.GetConfiguration();
         if (config != null)

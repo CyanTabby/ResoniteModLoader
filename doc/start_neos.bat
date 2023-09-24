@@ -1,1 +1,1 @@
-@start Neos.exe -LoadAssembly "Libraries\NeosModLoader.dll"
+@start Resonite.exe -LoadAssembly "Libraries\ResoniteModLoader.dll"
