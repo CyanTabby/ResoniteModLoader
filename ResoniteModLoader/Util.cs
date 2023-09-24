@@ -14,7 +14,7 @@ namespace ResoniteModLoader
 	{
 		/// <summary>
 		/// Get the executing mod by stack trace analysis.
-		/// You may skip extra frames if you know your callers are guaranteed to be NML code.
+		/// You may skip extra frames if you know your callers are guaranteed to be RML code.
 		/// </summary>
 		/// <param name="stackTrace">A stack trace captured by the callee</param>
 		/// <returns>The executing mod, or null if none found</returns>

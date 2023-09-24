@@ -107,7 +107,7 @@ namespace ResoniteModLoader
 		private readonly ModConfigurationDefinition Definition;
 		internal LoadedResoniteMod LoadedResoniteMod { get; private set; }
 
-		private static readonly string ConfigDirectory = Path.Combine(PlatformHelper.MainDirectory, "nml_config");
+		private static readonly string ConfigDirectory = Path.Combine(PlatformHelper.MainDirectory, "rml_config");
 		private static readonly string VERSION_JSON_KEY = "version";
 		private static readonly string VALUES_JSON_KEY = "values";
 

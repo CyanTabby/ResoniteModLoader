@@ -21,13 +21,13 @@ namespace ResoniteModLoader
 			{
 				HashSet<Assembly> initialAssemblies = AppDomain.CurrentDomain.GetAssemblies().ToHashSet();
 				SplashChanger.SetCustom("Loading libraries");
-				AssemblyFile[] loadedAssemblies = AssemblyLoader.LoadAssembliesFromDir("nml_libs");
+				AssemblyFile[] loadedAssemblies = AssemblyLoader.LoadAssembliesFromDir("rml_libs");
 				// note that harmony may not be loaded until this point, so this class cannot directly inport HarmonyLib.
 
 				if (loadedAssemblies.Length != 0)
 				{
 					string loadedAssemblyList = string.Join("\n", loadedAssemblies.Select(a => a.Assembly.FullName + " Sha256=" + a.Sha256));
-					Logger.MsgInternal($"Loaded libraries from nml_libs:\n{loadedAssemblyList}");
+					Logger.MsgInternal($"Loaded libraries from rml_libs:\n{loadedAssemblyList}");
 				}
 
 				SplashChanger.SetCustom("Initializing");

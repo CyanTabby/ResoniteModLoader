@@ -13,7 +13,7 @@ Below we will go over some common problems and their solutions.
 
 If the problem is the `-LoadAssembly` setup:
 
-1. Check the logs (`C:\Program Files (x86)\Steam\steamapps\common\ResoniteVR\Logs`). If you search the log for "ResoniteModLoader" you should find a section that looks like this:
+1. Check the logs (`C:\Program Files (x86)\Steam\steamapps\common\Resonite\Logs`). If you search the log for "ResoniteModLoader" you should find a section that looks like this:
 
    ```log
    5:26:23 PM.305 (  0 FPS)    Argument: Resonite.exe
@@ -24,7 +24,7 @@ If the problem is the `-LoadAssembly` setup:
    If those logs are absent it indicates you are not passing the `-LoadAssembly Libraries\ResoniteModLoader.dll` argument to Resonite correctly.
 2. Double check your shortcut to Resonite.
 3. Check a known-working shortcut.
-   1. Navigate to the Resonite install directory. (`C:\Program Files (x86)\Steam\steamapps\common\ResoniteVR`)
+   1. Navigate to the Resonite install directory. (`C:\Program Files (x86)\Steam\steamapps\common\Resonite`)
    2. Create a new text file named `start_Resonite.bat` in your Resonite install directory. Make sure the file extension is `.bat` and not`.txt`.
    3. Copy the contents of the example [start_Resonite.bat](start_Resonite.bat) into yours.
    4. Run your `start_Resonite.bat` by double-clicking it in your file explorer.
@@ -60,7 +60,7 @@ If the problem is your antivirus:
 
 1. Verify that the [installation instructions](../README.md#installation) were followed correctly
 2. If you are using the [standalone](Resonite_standalone_setup.md) or [Linux](linux.md) builds, make sure you've followed the extra steps.
-3. Check the logs (`C:\Program Files (x86)\Steam\steamapps\common\ResoniteVR\Logs`). There are a few things you are likely to find:
+3. Check the logs (`C:\Program Files (x86)\Steam\steamapps\common\Resonite\Logs`). There are a few things you are likely to find:
 
 Possibility 1: Harmony is not installed correctly.
 
@@ -115,14 +115,14 @@ Remove the offending mod, and contact its developer so they can fix the bug.
 
 If you are not sure which mod is broken, follow the below steps:
 
-1. Check the logs (`C:\Program Files (x86)\Steam\steamapps\common\ResoniteVR\Logs`). They should indicate which mod is failing. If the logs don't help, then continue with the following steps.
+1. Check the logs (`C:\Program Files (x86)\Steam\steamapps\common\Resonite\Logs`). They should indicate which mod is failing. If the logs don't help, then continue with the following steps.
 2. Disable ResoniteModLoader by removing the `-LoadAssembly Libraries\ResoniteModLoader.dll` launch option. If Resonite is still having problems while completely unmodified, you can get support on the [Resonite Discord](https://discordapp.com/invite/GQ92NUu5). **You should not ask the Resonite Discord for help with mods.**
 3. If you only experience the problem while modded, try uninstalling all of your mods and re-installing them one by one. Once you find the problematic mod reach out it its developers.
 4. If the issue appears to be with ResoniteModLoader itself, please open [an issue](https://github.com/Resonite-modding-group/ResoniteModLoader/issues).
 
 ## I Need More Help
 
-If you are having trouble diagnosing the issue yourself, we have a #help-and-support channel in the [Resonite Modding Discord]. The first thing we're likely to ask for is your log, so please have that handy. You can find logs here: `C:\Program Files (x86)\Steam\steamapps\common\ResoniteVR\Logs`
+If you are having trouble diagnosing the issue yourself, we have a #help-and-support channel in the [Resonite Modding Discord]. The first thing we're likely to ask for is your log, so please have that handy. You can find logs here: `C:\Program Files (x86)\Steam\steamapps\common\Resonite\Logs`
 
 <!--- Link References -->
 [Resonite Modding Discord]: https://discord.gg/vCDJK9xyvm

@@ -41,28 +41,28 @@ HeadDevice: Screen
 6:36:14 AM.079 (  0 FPS)	Supported subtitle formats: srt, sub, sub, ssa, ttml, vtt
 6:36:14 AM.438 (  0 FPS)	[INFO] [ResoniteModLoader] ResoniteModLoader v1.5.0 starting up!
 6:36:14 AM.572 (  0 FPS)	[INFO] [ResoniteModLoader] version spoofing succeeded
-6:36:14 AM.585 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod BetterLogixWires 1.0.1 from G:\Resonite\ResoniteProLauncher\app\nml_mods\BetterLogixWires.dll
-6:36:14 AM.747 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ColorDrop 1.0.0 from G:\Resonite\ResoniteProLauncher\app\nml_mods\ColorDrop.dll
-6:36:14 AM.760 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ExportResoniteToJson 1.1.1 from G:\Resonite\ResoniteProLauncher\app\nml_mods\ExportResoniteToJson.dll
+6:36:14 AM.585 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod BetterLogixWires 1.0.1 from G:\Resonite\ResoniteProLauncher\app\rml_mods\BetterLogixWires.dll
+6:36:14 AM.747 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ColorDrop 1.0.0 from G:\Resonite\ResoniteProLauncher\app\rml_mods\ColorDrop.dll
+6:36:14 AM.760 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ExportResoniteToJson 1.1.1 from G:\Resonite\ResoniteProLauncher\app\rml_mods\ExportResoniteToJson.dll
 6:36:14 AM.763 (  0 FPS)	[INFO] [ResoniteModLoader/ExportResoniteToJson] Hook installed successfully
-6:36:14 AM.765 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod InspectorScroll 1.0.0 from G:\Resonite\ResoniteProLauncher\app\nml_mods\InspectorScroll.dll
-6:36:14 AM.818 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod MotionBlurDisable 1.1.0 from G:\Resonite\ResoniteProLauncher\app\nml_mods\MotionBlurDisable.dll
+6:36:14 AM.765 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod InspectorScroll 1.0.0 from G:\Resonite\ResoniteProLauncher\app\rml_mods\InspectorScroll.dll
+6:36:14 AM.818 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod MotionBlurDisable 1.1.0 from G:\Resonite\ResoniteProLauncher\app\rml_mods\MotionBlurDisable.dll
 6:36:14 AM.820 (  0 FPS)	[INFO] [ResoniteModLoader/MotionBlurDisable] Hook installed successfully
 6:36:14 AM.822 (  0 FPS)	[INFO] [ResoniteModLoader/MotionBlurDisable] disabled 1 prexisting motion blurs
-6:36:14 AM.828 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ResoniteContactsSort 1.0.0 from G:\Resonite\ResoniteProLauncher\app\nml_mods\ResoniteContactsSort.dll
+6:36:14 AM.828 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ResoniteContactsSort 1.0.0 from G:\Resonite\ResoniteProLauncher\app\rml_mods\ResoniteContactsSort.dll
 6:36:14 AM.849 (  0 FPS)	[INFO] [ResoniteModLoader/ResoniteContactsSort] Hooks installed successfully!
-6:36:14 AM.849 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ResoniteLocomotionRename 1.0.0 from G:\Resonite\ResoniteProLauncher\app\nml_mods\ResoniteLocomotionRename.dll
+6:36:14 AM.849 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ResoniteLocomotionRename 1.0.0 from G:\Resonite\ResoniteProLauncher\app\rml_mods\ResoniteLocomotionRename.dll
 6:36:14 AM.851 (  0 FPS)	[INFO] [ResoniteModLoader/ResoniteLocomotionRename] LocomotionModule patch installed successfully
 6:36:14 AM.852 (  0 FPS)	[INFO] [ResoniteModLoader/ResoniteLocomotionRename] NoclipLocomotion patch installed successfully
 6:36:14 AM.852 (  0 FPS)	[INFO] [ResoniteModLoader/ResoniteLocomotionRename] GrabWorldLocomotion patch installed successfully
 6:36:14 AM.852 (  0 FPS)	[INFO] [ResoniteModLoader/ResoniteLocomotionRename] SlideLocomotion patch installed successfully
 6:36:14 AM.853 (  0 FPS)	[INFO] [ResoniteModLoader/ResoniteLocomotionRename] TeleportLocomotion patch installed successfully
-6:36:14 AM.853 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ResoniteTrackerIdStabilizer 1.0.0 from G:\Resonite\ResoniteProLauncher\app\nml_mods\ResoniteTrackerIdStabilizer.dll
+6:36:14 AM.853 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ResoniteTrackerIdStabilizer 1.0.0 from G:\Resonite\ResoniteProLauncher\app\rml_mods\ResoniteTrackerIdStabilizer.dll
 6:36:14 AM.855 (  0 FPS)	[INFO] [ResoniteModLoader/ResoniteTrackerIdStabilizer] patch installed successfully
-6:36:14 AM.855 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ShowComponentSlot 1.0.0 from G:\Resonite\ResoniteProLauncher\app\nml_mods\ShowComponentSlot.dll
-6:36:14 AM.864 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ShowDriveSource 1.1.1 from G:\Resonite\ResoniteProLauncher\app\nml_mods\ShowDriveSource.dll
-6:36:14 AM.867 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ToolshelfAnarchy 1.0.0 from G:\Resonite\ResoniteProLauncher\app\nml_mods\ToolshelfAnarchy.dll
-6:36:14 AM.868 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod VoiceVolumeOverride 1.0.1 from G:\Resonite\ResoniteProLauncher\app\nml_mods\VoiceVolumeOverride.dll
+6:36:14 AM.855 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ShowComponentSlot 1.0.0 from G:\Resonite\ResoniteProLauncher\app\rml_mods\ShowComponentSlot.dll
+6:36:14 AM.864 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ShowDriveSource 1.1.1 from G:\Resonite\ResoniteProLauncher\app\rml_mods\ShowDriveSource.dll
+6:36:14 AM.867 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod ToolshelfAnarchy 1.0.0 from G:\Resonite\ResoniteProLauncher\app\rml_mods\ToolshelfAnarchy.dll
+6:36:14 AM.868 (  0 FPS)	[INFO] [ResoniteModLoader] loaded mod VoiceVolumeOverride 1.0.1 from G:\Resonite\ResoniteProLauncher\app\rml_mods\VoiceVolumeOverride.dll
 6:36:14 AM.937 (  0 FPS)	[INFO] [ResoniteModLoader/VoiceVolumeOverride] Patching success!
 6:36:14 AM.966 (  0 FPS)	ExecutionHook: static constructor called!
 6:36:15 AM.269 (  0 FPS)		Reading settings file

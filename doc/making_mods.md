@@ -6,7 +6,7 @@ If you have some level of familiarity with C#, getting started making mods shoul
 
 1. Make a new .NET library against .NET version 4.6.2. You can use 4.7.2 if you absolutely need it in order to compile, but some features may not work.
 2. Add ResoniteModLoader.dll as a reference.
-3. Add references to Resonite libraries as needed (`C:\Program Files (x86)\Steam\steamapps\common\ResoniteVR\Resonite_Data\Managed`)
+3. Add references to Resonite libraries as needed (`C:\Program Files (x86)\Steam\steamapps\common\Resonite\Resonite_Data\Managed`)
 4. Remove the reference to `System.Net.Http` as it will make the compiler angry
 
 ## Hooks

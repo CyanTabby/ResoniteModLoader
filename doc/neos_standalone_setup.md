@@ -45,4 +45,4 @@ Therefore, my suggestion is you use ResoniteProLauncher to keep your install upd
 ## Important Notes
 
 - You will need to run `ResoniteProLauncher.exe` every time you want to update. You never need actually use its launch buttons, as it does not support launch options which are required for plugins/mods.
-- The logs you're used to finding in `C:\Program Files (x86)\Steam\steamapps\common\ResoniteVR\Logs` will go to `C:\Resonite\app\Logs` now.
+- The logs you're used to finding in `C:\Program Files (x86)\Steam\steamapps\common\Resonite\Logs` will go to `C:\Resonite\app\Logs` now.

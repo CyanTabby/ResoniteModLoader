@@ -15,31 +15,31 @@ If you've installed to a non-default location then finding the path is up to you
 
 | Description | Typical Path |
 | ----------- | ------------ |
-| Resonite Install Directory (Steam) | `C:\Program Files (x86)\Steam\steamapps\common\ResoniteVR` |
+| Resonite Install Directory (Steam) | `C:\Program Files (x86)\Steam\steamapps\common\Resonite` |
 | Resonite Install Directory (Standalone) | `C:\Resonite\app` |
-| Data Directory | `%userprofile%\AppData\LocalLow\Solirax\ResoniteVR` |
-| Temporary Directory | `%temp%\Solirax\ResoniteVR` |
-| Cache Directory | `%temp%\Solirax\ResoniteVR\Cache` |
+| Data Directory | `%userprofile%\AppData\LocalLow\Solirax\Resonite` |
+| Temporary Directory | `%temp%\Solirax\Resonite` |
+| Cache Directory | `%temp%\Solirax\Resonite\Cache` |
 
 ## Linux Native
 
 | Description | Typical Path |
 | ----------- | ------------ |
-| Resonite Install Directory (Steam) | `$HOME/.local/share/Steam/steamapps/common/ResoniteVR` |
+| Resonite Install Directory (Steam) | `$HOME/.local/share/Steam/steamapps/common/Resonite` |
 | Resonite Install Directory (Standalone) | *unknown* |
-| Data Directory | `$HOME/.config/unity3d/Solirax/ResoniteVR` |
-| Temporary Directory | `/tmp/Solirax/ResoniteVR` |
-| Cache Directory | `/tmp/Solirax/ResoniteVR/Cache` |
+| Data Directory | `$HOME/.config/unity3d/Solirax/Resonite` |
+| Temporary Directory | `/tmp/Solirax/Resonite` |
+| Cache Directory | `/tmp/Solirax/Resonite/Cache` |
 
 ## Linux Proton/WINE
 
 | Description | Typical Path |
 | ----------- | ------------ |
-| Resonite Install Directory (Steam) | `$HOME/.local/share/Steam/steamapps/common/ResoniteVR` |
+| Resonite Install Directory (Steam) | `$HOME/.local/share/Steam/steamapps/common/Resonite` |
 | Resonite Install Directory (Standalone) | *unknown* |
-| Data Directory | `$HOME/.local/share/Steam/steamapps/compatdata/740250/pfx/drive_c/users/steamuser/AppData/LocalLow/Solirax/ResoniteVR` |
-| Temporary Directory | `$HOME/.local/share/Steam/steamapps/compatdata/740250/pfx/drive_c/users/steamuser/Temp/Solirax/ResoniteVR` |
-| Cache Directory | `$HOME/.local/share/Steam/steamapps/compatdata/740250/pfx/drive_c/users/steamuser/Temp/Solirax/ResoniteVR/Cache` |
+| Data Directory | `$HOME/.local/share/Steam/steamapps/compatdata/740250/pfx/drive_c/users/steamuser/AppData/LocalLow/Solirax/Resonite` |
+| Temporary Directory | `$HOME/.local/share/Steam/steamapps/compatdata/740250/pfx/drive_c/users/steamuser/Temp/Solirax/Resonite` |
+| Cache Directory | `$HOME/.local/share/Steam/steamapps/compatdata/740250/pfx/drive_c/users/steamuser/Temp/Solirax/Resonite/Cache` |
 
 ## Drive Notes
 

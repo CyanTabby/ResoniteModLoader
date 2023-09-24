@@ -32,7 +32,7 @@ namespace ResoniteModLoader
 		}.Select(product => product.ToLower()).ToHashSet();
 
 		/// <summary>
-		/// Assemblies that were already loaded when NML started up, minus a couple known non-Resonite assemblies.
+		/// Assemblies that were already loaded when RML started up, minus a couple known non-Resonite assemblies.
 		/// </summary>
 		private static HashSet<Assembly>? ResoniteAssemblies;
 
@@ -50,8 +50,8 @@ namespace ResoniteModLoader
 		/// Patch Resonite's type lookup code to not see mod-related types. This is needed, because users can pass
 		/// arbitrary strings to TypeHelper.FindType(), which can be used to detect if someone is running mods.
 		/// </summary>
-		/// <param name="harmony">Our NML harmony instance</param>
-		/// <param name="initialAssemblies">Assemblies that were loaded when NML first started</param>
+		/// <param name="harmony">Our RML harmony instance</param>
+		/// <param name="initialAssemblies">Assemblies that were loaded when RML first started</param>
 		internal static void PatchResonite(Harmony harmony, HashSet<Assembly> initialAssemblies)
 		{
 			if (ModLoaderConfiguration.Get().HideModTypes)
@@ -85,10 +85,10 @@ namespace ResoniteModLoader
 
 		private static HashSet<Assembly> GetResoniteAssemblies(HashSet<Assembly> initialAssemblies)
 		{
-			// Remove NML itself, as its types should be hidden but it's guaranteed to be loaded.
+			// Remove RML itself, as its types should be hidden but it's guaranteed to be loaded.
 			initialAssemblies.Remove(Assembly.GetExecutingAssembly());
 
-			// Remove Harmony, as users who aren't using nml_libs will already have it loaded.
+			// Remove Harmony, as users who aren't using rml_libs will already have it loaded.
 			initialAssemblies.Remove(typeof(Harmony).Assembly);
 
 			return initialAssemblies;
@@ -136,9 +136,9 @@ namespace ResoniteModLoader
 				else
 				{
 					// an assembly was in neither ResoniteAssemblies nor modAssemblies
-					// this implies someone late-loaded an assembly after NML, and it was later used in-game
+					// this implies someone late-loaded an assembly after RML, and it was later used in-game
 					// this is super weird, and probably shouldn't ever happen... but if it does, I want to know about it.
-					// since this is an edge case users may want to handle in different ways, the HideLateTypes nml config option allows them to choose.
+					// since this is an edge case users may want to handle in different ways, the HideLateTypes rml config option allows them to choose.
 					bool hideLate = ModLoaderConfiguration.Get().HideLateTypes;
 					if (log)
 					{

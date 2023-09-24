@@ -46,7 +46,7 @@ namespace ResoniteModLoader
 
 			// generate list of assemblies to load
 			AssemblyFile[] modsToLoad;
-			if (AssemblyLoader.LoadAssembliesFromDir("nml_mods") is AssemblyFile[] arr)
+			if (AssemblyLoader.LoadAssembliesFromDir("rml_mods") is AssemblyFile[] arr)
 			{
 				modsToLoad = arr;
 			}

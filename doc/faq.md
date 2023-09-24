@@ -47,7 +47,7 @@ If you aren't sure if you can trust a mod and you have some level of ability to 
 
 ## Where does ResoniteModLoader log to?
 
-The regular Resonite logs: `C:\Program Files (x86)\Steam\steamapps\common\ResoniteVR\Logs`
+The regular Resonite logs: `C:\Program Files (x86)\Steam\steamapps\common\Resonite\Logs`
 
 ## Is ResoniteModLoader compatible with other mod loaders?
 

@@ -28,9 +28,9 @@ namespace ResoniteModLoader
 
 			List<string> extraAssemblies = Engine.ExtraAssemblies;
 			string assemblyFilename = Path.GetFileName(Assembly.GetExecutingAssembly().Location);
-			bool nmlPresent = extraAssemblies.Remove(assemblyFilename);
+			bool rmlPresent = extraAssemblies.Remove(assemblyFilename);
 
-			if (!nmlPresent)
+			if (!rmlPresent)
 			{
 				throw new Exception($"Assertion failed: Engine.ExtraAssemblies did not contain \"{assemblyFilename}\"");
 			}
@@ -88,7 +88,7 @@ namespace ResoniteModLoader
 			unmatchedPlugins.ExceptWith(plugins.Keys); // remove all matched plugins
 			foreach (string plugin in unmatchedPlugins)
 			{
-				Logger.ErrorInternal($"Unmatched plugin: \"{plugin}\". NML could not find the assembly for this plugin, therefore NML cannot properly calculate the compatibility hash.");
+				Logger.ErrorInternal($"Unmatched plugin: \"{plugin}\". RML could not find the assembly for this plugin, therefore RML cannot properly calculate the compatibility hash.");
 			}
 
 			// flags used later to determine how to spoof
@@ -120,7 +120,7 @@ namespace ResoniteModLoader
 
 			if (config.AdvertiseVersion)
 			{
-				// put NML back in the version string
+				// put RML back in the version string
 				Logger.MsgInternal($"Adding {Resonite_MOD_LOADER} to version string because you have AdvertiseVersion set to true.");
 				extraAssemblies.Insert(0, Resonite_MOD_LOADER);
 			}

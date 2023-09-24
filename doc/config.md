@@ -10,7 +10,7 @@ Operations provided:
 - Enumerating mods
 - Saving a config to disk
 
-Behind the scenes, configs are saved to a `nml_config` folder in the Resonite install directory. The `nml_config` folder contains JSON files, named after each mod dll that defines a config. End users and mod developers do not need to interact with this JSON directly. Mod developers should use the API exposed by ResoniteModLoader. End users should use interfaces exposed by configuration management mods.
+Behind the scenes, configs are saved to a `rml_config` folder in the Resonite install directory. The `rml_config` folder contains JSON files, named after each mod dll that defines a config. End users and mod developers do not need to interact with this JSON directly. Mod developers should use the API exposed by ResoniteModLoader. End users should use interfaces exposed by configuration management mods.
 
 ## Overview
 
