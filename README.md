@@ -71,7 +71,7 @@ Third-party libraries distributed alongside ResoniteModLoader:
 Third-party libraries used in source:
 
 - [.NET](https://github.com/dotnet) (Various licenses)
-- [Resonite](https://Resonite.com/) ([EULA](https://store.steampowered.com/eula/740250_eula_0))
+- [Resonite](https://Resonite.com/) ([EULA](https://resonite.com/policies/EULA.html))
 - [Json.NET](https://github.com/JamesNK/Newtonsoft.Json) ([MIT License](https://github.com/JamesNK/Newtonsoft.Json/blob/master/LICENSE.md))
 
 <!--- Link References -->
